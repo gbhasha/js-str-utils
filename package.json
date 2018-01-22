@@ -1,0 +1,22 @@
+{
+  "name": "stringhelper",
+  "version": "0.0.1",
+  "description": "Helper utility for string operations",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/jest"
+  },
+  "keywords": [
+    "String",
+    "helper"
+  ],
+  "author": "Galeel Bhasha Satthar",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.1.0",
+    "babel-preset-es2015": "^6.24.1",
+    "jest": "^22.1.4"
+  },
+  "dependencies": {}
+}
