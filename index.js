@@ -1,21 +1,17 @@
 'use strict';
-class StringHelper {
-  constructor() {
-    this.toTitleCase = this.toTitleCase.bind(this);
-    this.validate = this.validate.bind(this);
-  }
 
-  validate(input) {
+class strUtils {
+  static validate(input) {
     if(!input)
-      return 'Input text is not provided';
+      throw new Error('Input text is not provided');
 
     if(typeof input !== 'string')
-      return 'Input text should be of type string';
+      throw new Error('Input text should be of type string');
 
     return true;
   }
 
-  toTitleCase(text) {
+  static toTitleCase(text) {
     const isValidInput = this.validate(text);
 
     if(isValidInput == true)
@@ -24,19 +20,19 @@ class StringHelper {
       return new Error(isValidInput);
   }
 
-  toCamelCase(text) {
+  static toCamelCase(text) {
     const isValidInput = this.validate(text);
 
     if(isValidInput == true) {
       let outputText = this.toTitleCase(text);
-      outputText = outputText.split(" ").join("").split("-").join("");
+      outputText = outputText.replace(/\s|-|_/g, "");
       return outputText.replace(/\w+/g, (w) => w[0].toLowerCase() + w.slice(1));
     } else {
       return new Error(isValidInput);
     }
   }
 
-  randomString(strLength = 10, options) {
+  static randomString(strLength = 10, options) {
     let randomString = '';
     if(strLength && typeof strLength !== 'number')
       return new Error('Type of length of randomString should be number');
@@ -65,4 +61,4 @@ class StringHelper {
   }
 };
 
-export default StringHelper;
+export default strUtils;

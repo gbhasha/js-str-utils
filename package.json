@@ -1,7 +1,7 @@
 {
-  "name": "stringhelper",
+  "name": "js-string-utils",
   "version": "0.0.1",
-  "description": "Helper utility for string operations",
+  "description": "Utility functions for string operations",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/jest"
