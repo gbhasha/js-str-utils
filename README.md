@@ -1,12 +1,15 @@
-#String Utility Methods
+# String Utility Methods
+Utility functions for string operations
 
-#Usage
-import StringHelper from  'StringHelper'
+## Usage
+```js
+import strUtils from  'js-string-utils'
+```
 
-var strHelper = new StringHelper();
-
-#Methods
+## Methods
 
 .randomString()
+
 .toCamelCase()
+
 .toTitleCase()

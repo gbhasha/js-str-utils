@@ -1,14 +1,22 @@
 {
   "name": "js-string-utils",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Utility functions for string operations",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/jest"
+    "test": "./node_modules/.bin/jest",
+    "build": "node ./build.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gbhasha/js-str-utils.git"
+  },
+  "homepage": "https://github.com/gbhasha/js-str-utils",
   "keywords": [
     "String",
-    "helper"
+    "helper",
+    "utility",
+    "utils"
   ],
   "author": "Galeel Bhasha Satthar",
   "license": "MIT",
@@ -16,6 +24,8 @@
     "babel-core": "^6.26.0",
     "babel-jest": "^22.1.0",
     "babel-preset-es2015": "^6.24.1",
+    "chalk": "^2.3.0",
+    "fs-extra": "^5.0.0",
     "jest": "^22.1.4"
   },
   "dependencies": {}
